@@ -3,13 +3,15 @@
     <entity name="Statement" representedClassName=".Statement" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="statements" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName=".User" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statement" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="statements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Statement" inverseName="users" inverseEntity="Statement" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-261" positionY="-3" width="128" height="73"/>
-        <element name="Statement" positionX="-45" positionY="9" width="128" height="73"/>
+        <element name="User" positionX="-423" positionY="45" width="128" height="88"/>
+        <element name="Statement" positionX="-45" positionY="9" width="128" height="88"/>
     </elements>
 </model>

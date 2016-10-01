@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import 
 
 extension Statement {
 
@@ -18,5 +18,6 @@ extension Statement {
 
     @NSManaged public var content: String?
     @NSManaged public var date: NSDate?
+    @NSManaged public var users: User?
 
 }
