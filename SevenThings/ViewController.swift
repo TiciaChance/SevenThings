@@ -22,7 +22,8 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         
     }
     
-    @IBOutlet weak var recordingButtonTapped: UIButton!
 
+    @IBAction func recordingButtonTapped(_ sender: AnyObject) {
+    }
     
 }

@@ -26,12 +26,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-jW-yS4">
-                                <frame key="frameInset" minX="101" minY="554" width="172" height="30"/>
+                                <frame key="frameInset" minX="101" minY="472" width="172" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Start Recording">
                                     <color key="titleColor" red="0.0056904055740000003" green="0.015084708469999999" blue="0.031147742150000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recordingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8G-BN-iDw"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Should be whatever you say..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uhi-UT-tel">
                                 <frame key="frameInset" minX="67" minY="269" width="240" height="128"/>
@@ -44,8 +47,7 @@
                         <color key="backgroundColor" red="0.88627450980392153" green="0.32941176470588235" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="recordingButton" destination="bbf-jW-yS4" id="aqD-ZU-nYm"/>
-                        <outlet property="recordingButtonTapped" destination="bbf-jW-yS4" id="Gxw-1T-COG"/>
+                        <outlet property="recordingButton" destination="bbf-jW-yS4" id="nuf-xd-Ab2"/>
                         <outlet property="textView" destination="uhi-UT-tel" id="z2W-9F-zyn"/>
                         <outlet property="userPromptLabel" destination="tNg-hw-XSA" id="IRm-OB-gfd"/>
                     </connections>
