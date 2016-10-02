@@ -43,6 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.32941176470588235" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="recordingButton" destination="bbf-jW-yS4" id="aqD-ZU-nYm"/>
+                        <outlet property="recordingButtonTapped" destination="bbf-jW-yS4" id="Gxw-1T-COG"/>
+                        <outlet property="textView" destination="uhi-UT-tel" id="z2W-9F-zyn"/>
+                        <outlet property="userPromptLabel" destination="tNg-hw-XSA" id="IRm-OB-gfd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
